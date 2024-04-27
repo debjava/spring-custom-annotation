@@ -1,0 +1,43 @@
+27-04-2024 00:02:57.020 AM [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+27-04-2024 00:02:57.116 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - Starting SpringCustomAnnotationApplication using Java 17.0.10 with PID 14716 (E:\java-practice-2024\spring-custom-annotation\target\classes started by debad in E:\java-practice-2024\spring-custom-annotation)
+27-04-2024 00:02:57.117 AM [main] DEBUG c.d.r.SpringCustomAnnotationApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+27-04-2024 00:02:57.118 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - No active profile set, falling back to 1 default profile: "default"
+27-04-2024 00:02:59.716 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+27-04-2024 00:02:59.719 AM [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+27-04-2024 00:02:59.720 AM [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+27-04-2024 00:02:59.860 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+27-04-2024 00:03:00.392 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.d.r.c.CashDepositController:
+	{PUT [/cash]}: depositCash(Customer)
+27-04-2024 00:03:00.411 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+27-04-2024 00:03:00.444 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+27-04-2024 00:03:00.581 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+27-04-2024 00:03:00.759 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+27-04-2024 00:03:00.825 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - Started SpringCustomAnnotationApplication in 4.556 seconds (process running for 5.19)
+27-04-2024 00:03:03.935 AM [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+27-04-2024 00:04:32.583 AM [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+27-04-2024 00:04:32.699 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - Starting SpringCustomAnnotationApplication using Java 17.0.10 with PID 22848 (E:\java-practice-2024\spring-custom-annotation\target\classes started by debad in E:\java-practice-2024\spring-custom-annotation)
+27-04-2024 00:04:32.701 AM [main] DEBUG c.d.r.SpringCustomAnnotationApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+27-04-2024 00:04:32.702 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - No active profile set, falling back to 1 default profile: "default"
+27-04-2024 00:04:35.115 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+27-04-2024 00:04:35.117 AM [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+27-04-2024 00:04:35.118 AM [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+27-04-2024 00:04:35.221 AM [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+27-04-2024 00:04:35.617 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.d.r.c.CashDepositController:
+	{PUT [/cash]}: depositCash(Customer)
+27-04-2024 00:04:35.633 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+27-04-2024 00:04:35.661 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+27-04-2024 00:04:35.776 AM [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+27-04-2024 00:04:35.984 AM [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+27-04-2024 00:04:36.043 AM [main] INFO  c.d.r.SpringCustomAnnotationApplication - Started SpringCustomAnnotationApplication in 4.15 seconds (process running for 4.749)
+27-04-2024 00:04:42.792 AM [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+27-04-2024 00:04:42.989 AM [http-nio-8080-exec-2] DEBUG com.ddlab.rnd.aop.AppLoggerAspect - Incoming Request: /cash
+27-04-2024 00:04:42.992 AM [http-nio-8080-exec-2] DEBUG com.ddlab.rnd.aop.AppLoggerAspect - Invoked Method Name : depositCash
+27-04-2024 00:04:42.992 AM [http-nio-8080-exec-2] DEBUG com.ddlab.rnd.aop.AppLoggerAspect - Argument Name: customer, Argument value: Customer(actNo=1234, name=John Abraham, amount=20000)

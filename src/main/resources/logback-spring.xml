@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<property name="log.file.name" value="sample-app" />
+	<property name="log.path" value="." />
+
+	<appender name="Console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<!-- <Pattern> %d{yyyy-MM-dd HH:mm:ss} [%thread] %mdc{LOGGING_TRACKER_ID} 
+				%mdc{employeeId} %-5level %logger{36} -%msg%n </Pattern> -->
+			<!-- <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern> -->
+			<pattern>%d{dd-MM-yyyy HH:mm:ss.SSS a} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</layout>
+	</appender>
+
+	<appender name="FILE_STANDARD_LOG"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log.path}/${log.file.name}.log</file>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!-- <Pattern> %d{yyyy-MM-dd HH:mm:ss} [%thread] %mdc{LOGGING_TRACKER_ID} 
+				%mdc{employeeId} %-5level %logger{36} -%msg%n </Pattern> -->
+			<!-- <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern> -->
+			<pattern>%d{dd-MM-yyyy HH:mm:ss.SSS a} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${archive.log.path}/${log.file.name}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+
+	<root level="debug">
+		<appender-ref ref="FILE_STANDARD_LOG" />
+		<appender-ref ref="Console" />
+	</root>
+
+	<logger name="org.hibernate" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+	<logger name="org.springframework" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+	<logger name="com.zaxxer.hikari" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+	<logger name="ch.qos.logback" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+	<logger name="org.thymeleaf" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+	<logger name="ma.glasnost.orika" level="ERROR">
+		<AppenderRef ref="FILE_STANDARD_LOG" />
+		<AppenderRef ref="Console" />
+	</logger>
+
+</configuration>
